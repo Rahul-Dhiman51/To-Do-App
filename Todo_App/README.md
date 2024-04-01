@@ -1,8 +1,57 @@
-# React + Vite
+# To-Do App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introduction
 
-Currently, two official plugins are available:
+This is a simple To-Do application where you can manage your tasks efficiently.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+
+To install the dependencies, run the following command in your terminal:
+
+```bash
+npm install
+```
+
+Running the Application
+To start the application, run the following command:
+
+```bash
+npm run dev
+```
+
+To build the application, run the following command:
+
+```bash
+npm run dev
+```
+
+## Features
+
+1. Add new tasks
+2. Mark tasks as completed
+3. Edit existing tasks
+4. Delete tasks
+
+## Technologies Used
+
+1. React.js
+2. Redux (for state management)
+3. CSS (for styling)
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your changes to your fork.
+5. Submit a pull request.
+
+## Deployed Link
+
+Checkout deployed website
+
+```bash
+https://to-do-app-quadb-tech.netlify.app/
+```
