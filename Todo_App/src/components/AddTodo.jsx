@@ -4,9 +4,11 @@ import { addTodo } from '../features/todo/todoSlice';
 
 const AddTodo = () => {
 
+    // using useState hook to manage the state of the input.
     const [input, setInput] = useState("")
     const dispatch = useDispatch();
 
+    // addTodoHandler function to dispatch the addTodo action to the store and giving alert if the input is empty.
     const addTodoHandler = (e) => {
         e.preventDefault()
         if (!input) return alert("Please enter a valid todo")

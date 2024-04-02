@@ -4,7 +4,9 @@ import { useDispatch } from 'react-redux'
 
 const TodoItem = ({ todo }) => {
 
+    // using useDispatch hook to dispatch the actions to the store.
     const dispatch = useDispatch()
+    // using useState hook to manage the state of the todo message and isTodoEditable.
     const [isTodoEditable, setIsTodoEditable] = useState(false)
     const [todoMsg, setTodoMsg] = useState(todo.text)
 
@@ -19,6 +21,7 @@ const TodoItem = ({ todo }) => {
                 checked={todo.completed}
                 onChange={() => dispatch(toggleCompleted(todo.id))}
             />
+            {/* Todo Message and implementing the line through logic if to-do is completed */}
             <input
                 type="text"
                 className={`border outline-none w-full bg-transparent rounded-lg ${isTodoEditable ? "border-black/10 px-2" : "border-transparent"
@@ -30,6 +33,7 @@ const TodoItem = ({ todo }) => {
             {/* Edit, Save Button */}
             <button
                 className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0 disabled:opacity-50"
+                {/* onclick if the todo is Editable the dispatch will be called for updating the todo. Also, diabled is used here that will make editing the todo possible when it is not completed only. */}
                 onClick={() => {
                     if (todo.completed) return;
 

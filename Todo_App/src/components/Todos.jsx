@@ -4,9 +4,10 @@ import TodoItem from './TodoItem'
 
 
 const Todos = () => {
-
+    //  using useSelector hook to get the current state of todos from the store.
     const todos = useSelector(state => state.todos)
 
+    // using useEffect hook to save the todos in the local storage whenever the todos state changes.
     useEffect(() => {
         localStorage.setItem("todos", JSON.stringify(todos))
     }, [todos])
